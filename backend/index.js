@@ -14,7 +14,7 @@ const tribunaisData = require("./data/tribunais.json")
 const tiposAcaoData = require("./data/tipos-acao.json")
 
 const app = express()
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 8080
 
 // Caminho do build do frontend (importante para Docker/Railway)
 const frontendPath = path.join(__dirname, "frontend/dist")
