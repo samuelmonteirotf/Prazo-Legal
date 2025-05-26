@@ -1,0 +1,137 @@
+[
+  {
+    "codigo": "alimentos",
+    "nome": "Ação de Alimentos",
+    "categoria": "Família",
+    "descricao": "Pedido de pensão alimentícia",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["RG", "CPF", "Comprovante de renda", "Certidão de nascimento"],
+    "observacoes": "Processo prioritário quando envolve menor"
+  },
+  {
+    "codigo": "dano_moral",
+    "nome": "Dano Moral",
+    "categoria": "Cível",
+    "descricao": "Indenização por danos morais",
+    "complexidade_tipica": "media",
+    "documentos_necessarios": ["Provas do dano", "Documentos pessoais", "Laudos médicos (se aplicável)"],
+    "observacoes": "Valor da indenização varia conforme o caso"
+  },
+  {
+    "codigo": "revisao_contratual",
+    "nome": "Revisão Contratual",
+    "categoria": "Cível",
+    "descricao": "Revisão de cláusulas contratuais",
+    "complexidade_tipica": "media",
+    "documentos_necessarios": ["Contrato original", "Comprovantes de pagamento", "Correspondências"],
+    "observacoes": "Pode necessitar perícia contábil"
+  },
+  {
+    "codigo": "inventario",
+    "nome": "Inventário Judicial",
+    "categoria": "Família",
+    "descricao": "Partilha de bens após falecimento",
+    "complexidade_tipica": "alta",
+    "documentos_necessarios": ["Certidão de óbito", "Testamento", "Documentos dos bens", "RG dos herdeiros"],
+    "observacoes": "Processo complexo que pode durar anos"
+  },
+  {
+    "codigo": "divorcio_consensual",
+    "nome": "Divórcio Consensual",
+    "categoria": "Família",
+    "descricao": "Divórcio com acordo entre as partes",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["Certidão de casamento", "RG", "CPF", "Acordo de partilha"],
+    "observacoes": "Processo mais rápido quando há consenso"
+  },
+  {
+    "codigo": "divorcio_litigioso",
+    "nome": "Divórcio Litigioso",
+    "categoria": "Família",
+    "descricao": "Divórcio sem acordo entre as partes",
+    "complexidade_tipica": "alta",
+    "documentos_necessarios": ["Certidão de casamento", "Documentos dos bens", "Comprovantes de renda"],
+    "observacoes": "Envolve discussão de guarda e partilha"
+  },
+  {
+    "codigo": "acao_trabalhista",
+    "nome": "Ação Trabalhista",
+    "categoria": "Trabalhista",
+    "descricao": "Reclamação trabalhista",
+    "complexidade_tipica": "media",
+    "documentos_necessarios": ["CTPS", "Contratos", "Holerites", "Comprovantes de jornada"],
+    "observacoes": "Justiça do Trabalho é mais célere"
+  },
+  {
+    "codigo": "mandado_seguranca",
+    "nome": "Mandado de Segurança",
+    "categoria": "Constitucional",
+    "descricao": "Proteção de direito líquido e certo",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["Documentos que comprovem o direito", "Ato impugnado"],
+    "observacoes": "Rito especial com prazo de 120 dias"
+  },
+  {
+    "codigo": "acao_cobranca",
+    "nome": "Ação de Cobrança",
+    "categoria": "Cível",
+    "descricao": "Cobrança de dívida",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["Contrato", "Notas fiscais", "Comprovantes de entrega"],
+    "observacoes": "Pode ser executiva ou de conhecimento"
+  },
+  {
+    "codigo": "acao_previdenciaria",
+    "nome": "Ação Previdenciária",
+    "categoria": "Previdenciária",
+    "descricao": "Benefício previdenciário",
+    "complexidade_tipica": "media",
+    "documentos_necessarios": ["Documentos pessoais", "Laudos médicos", "Histórico laboral"],
+    "observacoes": "Requer perícia médica do INSS"
+  },
+  {
+    "codigo": "acao_despejo",
+    "nome": "Ação de Despejo",
+    "categoria": "Locação",
+    "descricao": "Retomada de imóvel locado",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["Contrato de locação", "Notificações", "Comprovantes de inadimplência"],
+    "observacoes": "Lei do Inquilinato prevê rito especial"
+  },
+  {
+    "codigo": "acao_penal",
+    "nome": "Ação Penal",
+    "categoria": "Criminal",
+    "descricao": "Processo criminal",
+    "complexidade_tipica": "alta",
+    "documentos_necessarios": ["Boletim de ocorrência", "Provas", "Laudos periciais"],
+    "observacoes": "Depende da gravidade do crime"
+  },
+  {
+    "codigo": "habeas_corpus",
+    "nome": "Habeas Corpus",
+    "categoria": "Criminal",
+    "descricao": "Proteção da liberdade de locomoção",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["Documentos que comprovem a coação", "Mandado de prisão"],
+    "observacoes": "Tramitação urgente e prioritária"
+  },
+  {
+    "codigo": "usucapiao",
+    "nome": "Ação de Usucapião",
+    "categoria": "Imobiliária",
+    "descricao": "Aquisição de propriedade por posse",
+    "complexidade_tipica": "alta",
+    "documentos_necessarios": ["Documentos do imóvel", "Provas de posse", "Planta do terreno"],
+    "observacoes": "Requer perícia e citação por edital"
+  },
+  {
+    "codigo": "acao_monitoria",
+    "nome": "Ação Monitória",
+    "categoria": "Cível",
+    "descricao": "Cobrança com prova escrita sem eficácia executiva",
+    "complexidade_tipica": "baixa",
+    "documentos_necessarios": ["Documento da dívida", "Comprovantes"],
+    "observacoes": "Procedimento especial simplificado"
+  }
+]

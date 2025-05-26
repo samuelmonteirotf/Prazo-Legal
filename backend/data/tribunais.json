@@ -1,0 +1,184 @@
+[
+  {
+    "codigo": "TJSP",
+    "nome": "Tribunal de Justiça de São Paulo",
+    "tipo": "Estadual",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "competencia": "Cível, Criminal, Família",
+    "site": "https://www.tjsp.jus.br",
+    "caracteristicas": {
+      "volume_processos": "muito_alto",
+      "digitalizacao": "alta",
+      "celeridade": "media"
+    }
+  },
+  {
+    "codigo": "TJRJ",
+    "nome": "Tribunal de Justiça do Rio de Janeiro",
+    "tipo": "Estadual",
+    "estado": "RJ",
+    "regiao": "Sudeste",
+    "competencia": "Cível, Criminal, Família",
+    "site": "https://www.tjrj.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "alta",
+      "celeridade": "media"
+    }
+  },
+  {
+    "codigo": "TJMG",
+    "nome": "Tribunal de Justiça de Minas Gerais",
+    "tipo": "Estadual",
+    "estado": "MG",
+    "regiao": "Sudeste",
+    "competencia": "Cível, Criminal, Família",
+    "site": "https://www.tjmg.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "alta",
+      "celeridade": "boa"
+    }
+  },
+  {
+    "codigo": "TJRS",
+    "nome": "Tribunal de Justiça do Rio Grande do Sul",
+    "tipo": "Estadual",
+    "estado": "RS",
+    "regiao": "Sul",
+    "competencia": "Cível, Criminal, Família",
+    "site": "https://www.tjrs.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "muito_alta",
+      "celeridade": "boa"
+    }
+  },
+  {
+    "codigo": "TJPR",
+    "nome": "Tribunal de Justiça do Paraná",
+    "tipo": "Estadual",
+    "estado": "PR",
+    "regiao": "Sul",
+    "competencia": "Cível, Criminal, Família",
+    "site": "https://www.tjpr.jus.br",
+    "caracteristicas": {
+      "volume_processos": "medio",
+      "digitalizacao": "alta",
+      "celeridade": "boa"
+    }
+  },
+  {
+    "codigo": "TJSC",
+    "nome": "Tribunal de Justiça de Santa Catarina",
+    "tipo": "Estadual",
+    "estado": "SC",
+    "regiao": "Sul",
+    "competencia": "Cível, Criminal, Família",
+    "site": "https://www.tjsc.jus.br",
+    "caracteristicas": {
+      "volume_processos": "medio",
+      "digitalizacao": "muito_alta",
+      "celeridade": "muito_boa"
+    }
+  },
+  {
+    "codigo": "TRT2",
+    "nome": "Tribunal Regional do Trabalho da 2ª Região",
+    "tipo": "Trabalhista",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "competencia": "Trabalhista",
+    "site": "https://www.trt2.jus.br",
+    "caracteristicas": {
+      "volume_processos": "muito_alto",
+      "digitalizacao": "alta",
+      "celeridade": "boa"
+    }
+  },
+  {
+    "codigo": "TRT1",
+    "nome": "Tribunal Regional do Trabalho da 1ª Região",
+    "tipo": "Trabalhista",
+    "estado": "RJ",
+    "regiao": "Sudeste",
+    "competencia": "Trabalhista",
+    "site": "https://www.trt1.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "alta",
+      "celeridade": "boa"
+    }
+  },
+  {
+    "codigo": "TRF3",
+    "nome": "Tribunal Regional Federal da 3ª Região",
+    "tipo": "Federal",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "competencia": "Federal",
+    "site": "https://www.trf3.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "muito_alta",
+      "celeridade": "media"
+    }
+  },
+  {
+    "codigo": "TRF2",
+    "nome": "Tribunal Regional Federal da 2ª Região",
+    "tipo": "Federal",
+    "estado": "RJ",
+    "regiao": "Sudeste",
+    "competencia": "Federal",
+    "site": "https://www.trf2.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "alta",
+      "celeridade": "media"
+    }
+  },
+  {
+    "codigo": "STJ",
+    "nome": "Superior Tribunal de Justiça",
+    "tipo": "Superior",
+    "estado": "DF",
+    "regiao": "Centro-Oeste",
+    "competencia": "Recurso Especial",
+    "site": "https://www.stj.jus.br",
+    "caracteristicas": {
+      "volume_processos": "muito_alto",
+      "digitalizacao": "muito_alta",
+      "celeridade": "baixa"
+    }
+  },
+  {
+    "codigo": "STF",
+    "nome": "Supremo Tribunal Federal",
+    "tipo": "Superior",
+    "estado": "DF",
+    "regiao": "Centro-Oeste",
+    "competencia": "Recurso Extraordinário",
+    "site": "https://www.stf.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "muito_alta",
+      "celeridade": "muito_baixa"
+    }
+  },
+  {
+    "codigo": "JEF",
+    "nome": "Juizado Especial Federal",
+    "tipo": "Especial",
+    "estado": "Nacional",
+    "regiao": "Nacional",
+    "competencia": "Causas até 60 salários mínimos",
+    "site": "https://www.cjf.jus.br",
+    "caracteristicas": {
+      "volume_processos": "alto",
+      "digitalizacao": "alta",
+      "celeridade": "boa"
+    }
+  }
+]

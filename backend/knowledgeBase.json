@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Como instalar o certificado A1 no Windows?",
+    "resposta": "Para instalar o certificado A1 no Windows:\n\n1. **Acesse a página de emissão** do seu certificado\n2. **Preencha os dados** solicitados (CPF, dados pessoais)\n3. **Baixe e instale o VAgent** se necessário\n4. **Faça o download** do arquivo .pfx\n5. **Clique duas vezes** no arquivo .pfx\n6. **Siga o assistente** de importação de certificados\n7. **Digite a senha** do certificado quando solicitado\n8. **Escolha o repositório** 'Pessoal' para armazenar\n9. **Finalize** a instalação\n\n⚠️ **Importante**: Mantenha a senha do certificado em local seguro!",
+    "categoria": "certificado-a1",
+    "keywords": ["a1", "windows", "instalar", "instalação", ".pfx", "vagent"],
+    "topicos_relacionados": ["certificado-a1-mac", "problemas-instalacao"]
+  },
+  {
+    "id": 2,
+    "pergunta": "Como instalar o certificado A1 no Mac?",
+    "resposta": "Para instalar o certificado A1 no Mac:\n\n1. **Obtenha o arquivo .pfx** do seu certificado\n2. **Clique duas vezes** no arquivo .pfx\n3. **Digite a senha** do certificado\n4. **Adicione ao 'Login'** (Keychain Access)\n5. **Abra o Keychain Access** (Acesso às Chaves)\n6. **Localize o certificado** na lista\n7. **Clique com botão direito** → 'Obter Informações'\n8. **Marque como 'Confiável'** nas configurações\n9. **Feche** e teste o certificado\n\n💡 **Dica**: O certificado ficará disponível em aplicações compatíveis automaticamente.",
+    "categoria": "certificado-a1",
+    "keywords": ["a1", "mac", "macos", "instalar", "keychain", "chaves"],
+    "topicos_relacionados": ["certificado-a1-windows", "problemas-mac"]
+  },
+  {
+    "id": 3,
+    "pergunta": "Como exportar certificado A1 para backup?",
+    "resposta": "Para fazer backup do certificado A1:\n\n**Windows:**\n1. **Abra** o Gerenciador de Certificados (certmgr.msc)\n2. **Navegue** até Pessoal → Certificados\n3. **Clique com botão direito** no certificado\n4. **Selecione** 'Todas as Tarefas' → 'Exportar'\n5. **Escolha** exportar a chave privada\n6. **Defina uma senha** forte\n7. **Salve** o arquivo .pfx em local seguro\n\n**Mac:**\n1. **Abra** o Keychain Access\n2. **Localize** o certificado\n3. **Clique com botão direito** → 'Exportar'\n4. **Escolha** formato .p12\n5. **Defina senha** e salve\n\n🔒 **Segurança**: Guarde a senha em local diferente do arquivo!",
+    "categoria": "certificado-a1",
+    "keywords": ["a1", "backup", "exportar", "pfx", "p12"],
+    "topicos_relacionados": ["backup", "seguranca"]
+  },
+  {
+    "id": 4,
+    "pergunta": "Como instalar o certificado A3 físico?",
+    "resposta": "Para instalar o certificado A3 físico:\n\n1. **Conecte o token/smartcard** na porta USB\n2. **Baixe e instale o VAgent** do site oficial\n3. **Instale o Administrador de Token** específico do seu dispositivo\n4. **Verifique se o token é reconhecido** pelo sistema\n5. **Execute o VAgent** como administrador\n6. **Siga as instruções** de instalação na tela\n7. **Digite a senha PIN** quando solicitado\n8. **Teste a conectividade** com aplicações\n\n🔐 **Atenção**: \n• Nunca digite o PIN incorreto 3 vezes seguidas (bloqueia o token)\n• Mantenha o token em local seguro\n• Faça backup da senha PIN",
+    "categoria": "certificado-a3",
+    "keywords": ["a3", "físico", "token", "smartcard", "pin", "administrador"],
+    "topicos_relacionados": ["problemas-token", "desbloqueio-pin"]
+  },
+  {
+    "id": 5,
+    "pergunta": "Como desbloquear token A3 com PUK?",
+    "resposta": "Para desbloquear token A3 com código PUK:\n\n1. **Localize o código PUK** (geralmente no envelope do token)\n2. **Abra o software** do fabricante do token\n3. **Procure opção** 'Desbloquear' ou 'Unlock'\n4. **Digite o código PUK** quando solicitado\n5. **Defina um novo PIN** (8 dígitos)\n6. **Confirme o novo PIN**\n7. **Teste** o acesso com o novo PIN\n\n⚠️ **Importante**:\n• PUK geralmente tem 8 dígitos\n• Após 10 tentativas erradas de PUK, token é inutilizado\n• Anote o novo PIN em local seguro\n\n📞 **Se não tiver PUK**: Contate a Autoridade Certificadora",
+    "categoria": "certificado-a3",
+    "keywords": ["a3", "puk", "desbloquear", "pin", "token"],
+    "topicos_relacionados": ["problemas-token", "novo-certificado"]
+  },
+  {
+    "id": 6,
+    "pergunta": "Quais drivers instalar para token A3?",
+    "resposta": "Drivers necessários por fabricante de token:\n\n**SafeNet/Gemalto:**\n• SafeNet Authentication Client\n• Disponível no site da Thales\n\n**Watchdata:**\n• WatchData USB Token Admin Tool\n• Baixar do site oficial Watchdata\n\n**Feitian:**\n• ePass2003 Auto Tool\n• Disponível no site Feitian\n\n**Aladdin/SafeNet:**\n• eToken PKI Client\n• Legacy, para tokens mais antigos\n\n**Passos gerais:**\n1. **Identifique** a marca do seu token\n2. **Baixe** o driver oficial\n3. **Execute como administrador**\n4. **Reinicie** o computador\n5. **Teste** o reconhecimento\n\n💡 **Dica**: VAgent geralmente inclui drivers básicos",
+    "categoria": "certificado-a3",
+    "keywords": ["a3", "drivers", "safenet", "watchdata", "feitian"],
+    "topicos_relacionados": ["problemas-token", "instalacao"]
+  },
+  {
+    "id": 7,
+    "pergunta": "Como instalar o Vidaas no computador?",
+    "resposta": "Para instalar o Vidaas Connect no computador:\n\n1. **Baixe o Vidaas Connect** do site oficial\n2. **Verifique os requisitos** do sistema\n3. **Instale o .NET Framework** se necessário\n4. **Execute o instalador** como administrador\n5. **Siga as instruções** de instalação\n6. **Reinicie o computador** se solicitado\n7. **Abra o Vidaas Connect**\n8. **Use o celular** para ler o QRCode\n9. **Complete a sincronização** entre dispositivos\n\n📱 **Requisito**: É necessário ter o app Vidaas instalado no celular para funcionar.\n\n🔗 **Sincronização**: O certificado no celular será usado pelo computador via bluetooth/wifi.",
+    "categoria": "vidaas",
+    "keywords": ["vidaas", "computador", "connect", "qrcode", "net framework"],
+    "topicos_relacionados": ["vidaas-celular", "problemas-sincronizacao"]
+  },
+  {
+    "id": 8,
+    "pergunta": "Como instalar o Vidaas no celular?",
+    "resposta": "Para instalar o Vidaas no celular:\n\n1. **Acesse a loja de aplicativos**:\n   • Android: Google Play Store\n   • iOS: App Store\n2. **Busque por 'Vidaas'**\n3. **Instale o aplicativo** oficial\n4. **Abra o app** após instalação\n5. **Clique em 'Novo'**\n6. **Selecione 'Emitir novo E-CPF'**\n7. **Insira seu CPF** e dados pessoais\n8. **Siga as instruções** de validação\n9. **Complete a biometria** (se solicitada)\n10. **Finalize** a instalação do certificado\n\n✅ **Verificação**: Após instalado, teste a assinatura digital em um documento PDF.",
+    "categoria": "vidaas",
+    "keywords": ["vidaas", "celular", "aplicativo", "e-cpf", "biometria", "mobile"],
+    "topicos_relacionados": ["vidaas-computador", "problemas-mobile"]
+  },
+  {
+    "id": 9,
+    "pergunta": "Como sincronizar Vidaas entre dispositivos?",
+    "resposta": "Para sincronizar Vidaas entre celular e computador:\n\n**Preparação:**\n1. **Certifique-se** que o Vidaas está ativo no celular\n2. **Instale** o Vidaas Connect no computador\n3. **Mantenha** dispositivos próximos (mesma rede)\n\n**Sincronização:**\n1. **Abra** o Vidaas Connect no computador\n2. **Aparecerá** um QR Code na tela\n3. **No celular**, abra o app Vidaas\n4. **Toque** em 'Conectar computador'\n5. **Escaneie** o QR Code com o celular\n6. **Confirme** a conexão no celular\n7. **Aguarde** a sincronização completar\n\n🔄 **Reconexão**: Repita o processo sempre que precisar usar no computador\n\n📶 **Requisitos**: Bluetooth ou WiFi ativo em ambos dispositivos",
+    "categoria": "vidaas",
+    "keywords": ["vidaas", "sincronizar", "qrcode", "conectar", "bluetooth"],
+    "topicos_relacionados": ["vidaas-computador", "vidaas-celular"]
+  },
+  {
+    "id": 10,
+    "pergunta": "Como configurar o certificado no PJe?",
+    "resposta": "Para configurar o certificado no PJe:\n\n1. **Acesse o site do tribunal** desejado\n2. **Clique em 'Modo de Assinatura'**\n3. **Escolha 'Configurações Avançadas'**\n4. **Selecione seu certificado** na lista\n5. **Baixe e instale o PJeOffice** se necessário\n6. **Configure o navegador** para permitir popups\n7. **Teste a assinatura** em um documento\n8. **Verifique se o certificado** aparece nas opções\n\n🏛️ **Tribunais Suportados**: \n• TJSP, TJRJ, TJMG, TRF1, TRF2, TRF3, etc.\n\n⚙️ **Configurações do Navegador**:\n• Permitir Java (se necessário)\n• Habilitar popups para o site\n• Certificado deve estar instalado corretamente",
+    "categoria": "pje",
+    "keywords": ["pje", "tribunal", "assinatura", "pjeoffice", "configurar"],
+    "topicos_relacionados": ["problemas-pje", "certificado-a1", "certificado-a3"]
+  },
+  {
+    "id": 11,
+    "pergunta": "Como resolver problemas no PJe?",
+    "resposta": "Soluções para problemas comuns no PJe:\n\n**Certificado não aparece:**\n1. **Verifique** se está instalado corretamente\n2. **Reinicie** o navegador\n3. **Limpe** cache e cookies\n4. **Teste** em modo anônimo\n\n**Erro de assinatura:**\n1. **Instale** o PJeOffice mais recente\n2. **Configure** popups permitidos\n3. **Desabilite** bloqueadores de anúncio\n4. **Use** navegador compatível (Chrome, Firefox)\n\n**Java não funciona:**\n1. **Atualize** o Java para versão mais recente\n2. **Adicione** o site aos confiáveis\n3. **Configure** exceções de segurança\n\n**Vidaas no PJe:**\n1. **Mantenha** celular próximo\n2. **Confirme** no app quando solicitado\n3. **Verifique** conexão bluetooth/wifi",
+    "categoria": "pje",
+    "keywords": ["pje", "problema", "erro", "java", "assinatura"],
+    "topicos_relacionados": ["configurar-pje", "problemas"]
+  },
+  {
+    "id": 12,
+    "pergunta": "Como configurar o certificado no Projudi?",
+    "resposta": "Para configurar o certificado no Projudi:\n\n1. **Verifique se o Vidaas está ativo** (se usar Vidaas)\n2. **Instale o Java** mais recente se necessário\n3. **Acesse a OAB Nacional** para recuperar dados\n4. **Configure seu navegador**:\n   • Habilite Java\n   • Permita popups\n   • Adicione site aos confiáveis\n5. **Entre no Projudi** do seu estado\n6. **Teste a assinatura** de documentos\n7. **Verifique se o certificado** é reconhecido\n\n⚖️ **Estados com Projudi**: \nBA, GO, MT, MS, PA, RO, TO e outros\n\n🔧 **Resolução de Problemas**:\n• Limpe cache do navegador\n• Reinstale o certificado se necessário\n• Verifique se o Java está atualizado",
+    "categoria": "projudi",
+    "keywords": ["projudi", "oab", "java", "assinatura", "navegador"],
+    "topicos_relacionados": ["problemas-projudi", "vidaas", "certificado-a3"]
+  },
+  {
+    "id": 13,
+    "pergunta": "Meu certificado não aparece no navegador",
+    "resposta": "Para resolver quando o certificado não aparece:\n\n**Certificado A1:**\n1. **Verifique se foi instalado** corretamente\n2. **Reinicie o navegador** completamente\n3. **Limpe cache e cookies**\n4. **Reinstale o certificado** se necessário\n\n**Certificado A3:**\n1. **Conecte o token** antes de abrir o navegador\n2. **Instale os drivers** do token\n3. **Digite o PIN** quando solicitado\n4. **Verifique no Gerenciador** de Certificados\n\n**Vidaas:**\n1. **Certifique-se que está ativo** no celular\n2. **Mantenha dispositivos próximos**\n3. **Verifique conexão** bluetooth/wifi\n\n🔄 **Teste Geral**: Vá em Configurações → Opções de Internet → Conteúdo → Certificados",
+    "categoria": "problemas",
+    "keywords": ["não aparece", "problema", "certificado", "navegador", "invisível"],
+    "topicos_relacionados": ["reinstalar-certificado", "drivers-token"]
+  },
+  {
+    "id": 14,
+    "pergunta": "Token A3 não está sendo reconhecido",
+    "resposta": "**Soluções para token não reconhecido:**\n\n**🔌 Verificações Básicas:**\n1. **Teste outras portas** USB\n2. **Reinicie o computador** com token conectado\n3. **Verifique se LED** do token acende\n4. **Teste em outro computador**\n\n**💿 Drivers e Software:**\n1. **Reinstale os drivers** do token\n2. **Baixe drivers atualizados** do site do fabricante\n3. **Instale o VAgent** mais recente\n4. **Execute como administrador**\n\n**⚙️ Configurações do Sistema:**\n1. **Gerenciador de Dispositivos** → procure erros\n2. **Desabilite antivírus** temporariamente\n3. **Atualize Windows** completamente\n\n**🆘 Se nada funcionar:**\n• Token pode estar danificado\n• **Contate a AC** para verificação\n• Pode ser necessário **novo token**",
+    "categoria": "problemas",
+    "keywords": ["token", "não reconhece", "a3", "drivers", "usb", "problema"],
+    "topicos_relacionados": ["certificado-a3", "drivers-token"]
+  },
+  {
+    "id": 15,
+    "pergunta": "Esqueci a senha do meu certificado",
+    "resposta": "**Recuperação de senha por tipo:**\n\n**🗂️ Certificado A1:**\n• **Não é possível** recuperar senha esquecida\n• Necessário **revogar** e emitir novo certificado\n• **Contate a AC** para revogar o atual\n\n**🔐 Certificado A3 (PIN):**\n• **PUK (código desbloqueio)** pode ajudar\n• **Contate a AC** que emitiu o certificado\n• Pode ser necessário **novo token**\n\n**📱 Vidaas:**\n• Use **'Esqueci minha senha'** no app\n• **Recuperação por e-mail** ou SMS\n• **Biometria** pode servir como alternativa\n• **Suporte da AC** pode ajudar\n\n⚠️ **Prevenção**:\n• Anote senhas em local seguro\n• Use gerenciador de senhas\n• Configure métodos de recuperação",
+    "categoria": "problemas",
+    "keywords": ["esqueci", "senha", "pin", "puk", "perdeu", "recuperar"],
+    "topicos_relacionados": ["backup", "novo-certificado"]
+  },
+  {
+    "id": 16,
+    "pergunta": "Como renovar meu certificado digital?",
+    "resposta": "Para renovar seu certificado digital:\n\n**Antes do Vencimento (recomendado):**\n1. **Verifique a data de validade** atual\n2. **Acesse o site da AC** (Autoridade Certificadora)\n3. **Procure por 'Renovação'** ou 'Renovar'\n4. **Preencha os dados** solicitados\n5. **Escolha o tipo** (A1, A3 ou Vidaas)\n6. **Efetue o pagamento**\n7. **Siga o processo** de emissão\n\n**Após o Vencimento:**\n• Será necessário fazer uma **nova emissão**\n• Processo similar ao primeiro certificado\n• Pode ser necessário **validação presencial**\n\n💰 **Custo**: Renovação geralmente tem desconto comparado à primeira emissão\n⏰ **Prazo**: Renove com 30-60 dias de antecedência",
+    "categoria": "renovacao",
+    "keywords": ["renovar", "renovação", "vencimento", "validade", "expirar"],
+    "topicos_relacionados": ["escolher-certificado", "custos"]
+  },
+  {
+    "id": 17,
+    "pergunta": "Quando devo renovar meu certificado?",
+    "resposta": "**Timing ideal para renovação:**\n\n**📅 Cronograma recomendado:**\n• **60 dias antes**: Comece a planejar\n• **30 dias antes**: Inicie o processo\n• **15 dias antes**: Finalize a renovação\n• **7 dias antes**: Teste o novo certificado\n\n**🔍 Como verificar validade:**\n• **A1**: Gerenciador de Certificados\n• **A3**: Software do token\n• **Vidaas**: App no celular\n\n**⚠️ Sinais de que precisa renovar:**\n• Avisos de expiração em sistemas\n• Erro 'certificado expirado'\n• Data de validade próxima\n\n**💡 Dicas importantes:**\n• Não espere vencer para renovar\n• Mantenha certificado antigo até confirmar o novo\n• Teste em todos os sistemas que usa\n• Atualize em todos os dispositivos",
+    "categoria": "renovacao",
+    "keywords": ["quando", "renovar", "prazo", "validade", "cronograma"],
+    "topicos_relacionados": ["renovar-certificado", "verificar-validade"]
+  },
+  {
+    "id": 18,
+    "pergunta": "Qual a diferença entre A1, A3 e Vidaas?",
+    "resposta": "**Principais diferenças entre os tipos de certificado:**\n\n**🗂️ Certificado A1:**\n• Arquivo digital (.pfx)\n• Instalado no computador\n• Validade: 1 ano\n• Mais prático para uso diário\n• Risco: se o computador for comprometido\n\n**🔐 Certificado A3:**\n• Armazenado em token/smartcard\n• Hardware físico\n• Validade: 1-5 anos\n• Maior segurança\n• Necessita do dispositivo para usar\n\n**📱 Vidaas (Certificado em Nuvem):**\n• Armazenado na nuvem\n• Acesso via celular\n• Validade: 1-3 anos\n• Mais moderno e conveniente\n• Biometria como segurança adicional\n\n💡 **Escolha baseada em:**\n• Frequência de uso\n• Nível de segurança necessário\n• Mobilidade necessária",
+    "categoria": "tipos",
+    "keywords": ["diferença", "a1", "a3", "vidaas", "comparar", "qual escolher"],
+    "topicos_relacionados": ["escolher-certificado", "renovacao"]
+  },
+  {
+    "id": 19,
+    "pergunta": "Como fazer backup do meu certificado?",
+    "resposta": "**Backup por tipo de certificado:**\n\n**📁 Certificado A1:**\n1. **Exporte o certificado**:\n   • Windows: Gerenciador de Certificados\n   • Mac: Keychain Access\n2. **Salve o arquivo .pfx** em local seguro\n3. **Anote a senha** em local protegido\n4. **Teste o backup** em outro computador\n\n**🔐 Certificado A3:**\n• **Não é possível** fazer backup tradicional\n• O certificado está no hardware\n• **Guarde bem** o token/smartcard\n• **Anote o PIN** em local seguro\n\n**☁️ Vidaas:**\n• Backup **automático na nuvem**\n• **Mantenha login** e senha atualizados\n• **Configure** biometria como backup\n• **Anote dados** de recuperação\n\n🔒 **Segurança**: Nunca compartilhe senhas ou arquivos de certificado!",
+    "categoria": "backup",
+    "keywords": ["backup", "cópia", "exportar", "salvar", "segurança"],
+    "topicos_relacionados": ["seguranca", "perda-certificado"]
+  },
+  {
+    "id": 20,
+    "pergunta": "Como assinar PDF com certificado digital?",
+    "resposta": "**Como assinar PDF digitalmente:**\n\n**📄 Adobe Acrobat/Reader:**\n1. **Abra o PDF** no Adobe Reader\n2. **Clique em 'Assinar'** na barra superior\n3. **Selecione 'Colocar Assinatura'**\n4. **Desenhe** retângulo onde assinar\n5. **Escolha seu certificado** na lista\n6. **Digite a senha** (A1) ou PIN (A3)\n7. **Confirme** a assinatura\n\n**🌐 Navegador (sites gov):**\n1. **Faça upload** do PDF no site\n2. **Clique em 'Assinar'**\n3. **Aguarde** popup de certificados\n4. **Selecione** seu certificado\n5. **Digite** senha/PIN\n6. **Baixe** arquivo assinado\n\n**📱 Vidaas:**\n• Use app específico ou site compatível\n• Confirme com biometria no celular\n\n✅ **Verificação**: PDF assinado terá selo/marca de autenticidade",
+    "categoria": "assinatura",
+    "keywords": ["assinar", "pdf", "adobe", "assinatura digital", "documento"],
+    "topicos_relacionados": ["validar-assinatura", "problemas-assinatura"]
+  }
+]
