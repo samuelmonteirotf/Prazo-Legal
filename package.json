@@ -4,7 +4,7 @@
   "description": "Estimador de tempo de tramitação de processos judiciais por tipo de ação e tribunal",
   "scripts": {
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "build": "npm run client:build && npm run server:build",
+    "build": "npm run install:frontend && npm run client:build",
     "start": "npm run server:start",
     "server:dev": "cd backend && npm run dev",
     "server:start": "cd backend && npm start",
@@ -13,12 +13,20 @@
     "client:build": "cd frontend && npm run build",
     "client:preview": "cd frontend && npm run preview",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "install:frontend": "cd frontend && npm install",
     "clean": "rm -rf node_modules backend/node_modules frontend/node_modules",
     "test": "npm run server:test && npm run client:test",
     "server:test": "cd backend && npm test",
     "client:test": "cd frontend && npm test"
   },
-  "keywords": ["processo", "judicial", "estimativa", "tempo", "tribunal", "advocacia"],
+  "keywords": [
+    "processo",
+    "judicial",
+    "estimativa",
+    "tempo",
+    "tribunal",
+    "advocacia"
+  ],
   "author": "Seu Nome",
   "license": "MIT",
   "devDependencies": {
