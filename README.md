@@ -1,8 +1,8 @@
-# ⚖️ Tempo de Processo - Estimador Judicial
+#  Tempo de Processo - Estimador Judicial
 
 **Aplicação** para estimativa de tempo de tramitação de processos judiciais com base no tipo de ação e tribunal escolhido.
 
-## 📌 Visão Geral
+## Visão Geral
 
 Este projeto combina:
 - **Frontend React** - Interface moderna e intuitiva
@@ -10,7 +10,7 @@ Este projeto combina:
 - **Base de Conhecimento** - 25+ estimativas de diferentes tipos de processo
 - **Integração com Tribunais** - Dados de TJSP, TJRJ, TRT, TRF, STJ, STF
 
-### 🎯 Funcionalidades
+### Funcionalidades
 
 - ✅ **Estimativa Inteligente** baseada em dados históricos
 - ✅ **Múltiplos Tribunais** (Estaduais, Trabalhistas, Federais, Superiores)
@@ -20,7 +20,7 @@ Este projeto combina:
 - ✅ **Interface Responsiva** com Tailwind CSS
 - ✅ **API REST Completa** com documentação
 
-## 🚀 Instalação Rápida
+## Instalação Rápida
 
 ### 1. Clone o projeto
 \`\`\`bash
@@ -48,40 +48,40 @@ Isso iniciará:
 - **Frontend** em http://localhost:3000
 - **Backend** em http://localhost:3001
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 \`\`\`
 tempo-de-processo/
-├── 📁 frontend/                 # React Frontend
-│   ├── 📁 src/
-│   │   ├── 📄 App.jsx          # Componente principal
-│   │   ├── 📁 components/      # Componentes React
-│   │   │   ├── 📄 Header.jsx
-│   │   │   ├── 📄 EstimatorForm.jsx
-│   │   │   ├── 📄 ResultCard.jsx
-│   │   │   ├── 📄 ComparisonChart.jsx
-│   │   │   └── 📄 StatsCard.jsx
-│   │   └── 📁 services/
-│   │       └── 📄 ProcessService.js
-│   ├── 📄 index.html
-│   ├── 📄 vite.config.js
-│   └── 📄 package.json
+├──  frontend/                 # React Frontend
+│   ├──  src/
+│   │   ├──  App.jsx          # Componente principal
+│   │   ├──  components/      # Componentes React
+│   │   │   ├──  Header.jsx
+│   │   │   ├──  EstimatorForm.jsx
+│   │   │   ├──  ResultCard.jsx
+│   │   │   ├──  ComparisonChart.jsx
+│   │   │   └──  StatsCard.jsx
+│   │   └──  services/
+│   │       └──  ProcessService.js
+│   ├──  index.html
+│   ├──  vite.config.js
+│   └──  package.json
 │
-├── 📁 backend/                  # Node.js Backend
-│   ├── 📄 index.js             # Servidor Express
-│   ├── 📁 data/                # Base de dados JSON
-│   │   ├── 📄 estimativas.json # 25+ estimativas
-│   │   ├── 📄 tribunais.json   # 13 tribunais
-│   │   └── 📄 tipos-acao.json  # 15 tipos de ação
-│   └── 📄 package.json
+├──  backend/                  # Node.js Backend
+│   ├──  index.js             # Servidor Express
+│   ├──  data/                # Base de dados JSON
+│   │   ├──  estimativas.json # 25+ estimativas
+│   │   ├──  tribunais.json   # 13 tribunais
+│   │   └──  tipos-acao.json  # 15 tipos de ação
+│   └──  package.json
 │
-├── 📄 package.json             # Scripts do projeto raiz
-├── 📄 docker-compose.yml       # Orquestração Docker
-├── 📄 Dockerfile              # Build unificado
-└── 📄 README.md               # Este arquivo
+├──  package.json             # Scripts do projeto raiz
+├──  docker-compose.yml       # Orquestração Docker
+├──  Dockerfile              # Build unificado
+└──  README.md               # Este arquivo
 \`\`\`
 
-## 🛠️ Scripts Disponíveis
+## Scripts Disponíveis
 
 ### Desenvolvimento
 \`\`\`bash
@@ -96,7 +96,7 @@ npm run build           # Build completo
 npm start               # Inicia em modo produção
 \`\`\`
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 Base URL: \`http://localhost:3001/api\`
 
@@ -128,7 +128,7 @@ const data = await response.json()
 console.log(data.estimativa.tempo.texto) // "6 a 12 meses"
 \`\`\`
 
-## 📊 Base de Dados
+##  Base de Dados
 
 ### Tribunais Suportados (13)
 - **Estaduais**: TJSP, TJRJ, TJMG, TJRS, TJPR, TJSC
@@ -161,7 +161,7 @@ Cada estimativa inclui:
 - Complexidade média
 - Observações específicas
 
-## 🎨 Interface do Usuário
+##  Interface do Usuário
 
 ### Componentes Principais
 
@@ -173,14 +173,14 @@ Cada estimativa inclui:
 
 ### Recursos da Interface
 
-- 📱 **Design Responsivo** - Funciona em desktop e mobile
-- 🎨 **Tailwind CSS** - Estilização moderna e consistente
-- 📊 **Gráficos Interativos** - Comparação visual de tempos
-- 🔍 **Busca Inteligente** - Dropdowns com busca
-- ⚡ **Loading States** - Feedback visual durante carregamento
-- 🎯 **Validação** - Campos obrigatórios e validações
+-  **Design Responsivo** - Funciona em desktop e mobile
+-  **Tailwind CSS** - Estilização moderna e consistente
+-  **Gráficos Interativos** - Comparação visual de tempos
+-  **Busca Inteligente** - Dropdowns com busca
+-  **Loading States** - Feedback visual durante carregamento
+-  **Validação** - Campos obrigatórios e validações
 
-## 🔧 Configuração Avançada
+## Configuração Avançada
 
 ### Variáveis de Ambiente
 
@@ -214,7 +214,7 @@ export default defineConfig({
 })
 \`\`\`
 
-## 🐳 Deploy com Docker
+## Deploy com Docker
 
 ### Build e execução
 \`\`\`bash
@@ -234,7 +234,7 @@ docker-compose up -d
 docker-compose logs -f
 \`\`\`
 
-## 📈 Funcionalidades Avançadas
+## Funcionalidades Avançadas
 
 ### Algoritmo de Estimativa
 
@@ -257,7 +257,7 @@ docker-compose logs -f
 - Tempo médio geral
 - Distribuição por instância e estado
 
-## 🧪 Testes
+## Testes
 
 \`\`\`bash
 # Executar todos os testes
@@ -270,21 +270,21 @@ cd backend && npm test
 cd frontend && npm test
 \`\`\`
 
-## 📞 Suporte e Contribuição
+## Suporte e Contribuição
 
 - **GitHub Issues**: Para bugs e feature requests
 - **Pull Requests**: Contribuições são bem-vindas
 - **Documentação**: Veja os comentários no código
 
-## 📄 Licença
+## Licença
 
 MIT License - veja o arquivo LICENSE para detalhes.
 
 ---
 
-**⚖️ Desenvolvido para a comunidade jurídica brasileira**
+** Desenvolvido para a comunidade jurídica brasileira**
 
-🏛️ **Tribunais integrados**: Estaduais, Trabalhistas, Federais e Superiores  
-📊 **Base robusta**: 25+ estimativas baseadas em dados reais  
-🚀 **Pronto para produção**: Docker, API REST, interface responsiva
+ **Tribunais integrados**: Estaduais, Trabalhistas, Federais e Superiores  
+ **Base robusta**: 25+ estimativas baseadas em dados reais  
+ **Pronto para produção**: Docker, API REST, interface responsiva
 \`\`\`
