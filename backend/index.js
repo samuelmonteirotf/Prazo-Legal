@@ -16,6 +16,9 @@ const tiposAcaoData = require("./data/tipos-acao.json")
 const app = express()
 const PORT = process.env.PORT || 8080
 
+// ✅ Corrige o erro de X-Forwarded-For no Railway
+app.set('trust proxy', 1)
+
 // Caminho do build do frontend (importante para Docker/Railway)
 const frontendPath = path.join(__dirname, "frontend/dist")
 
