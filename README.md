@@ -23,26 +23,26 @@ Este projeto combina:
 ## Instalação Rápida
 
 ### 1. Clone o projeto
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd tempo-de-processo
-\`\`\`
+```
 
 ### 2. Instale todas as dependências
-\`\`\`bash
+```bash
 npm run install:all
-\`\`\`
+```
 
 ### 3. Configure as variáveis de ambiente
-\`\`\`bash
+```bash
 cp backend/.env.example backend/.env
 # Edite backend/.env conforme necessário
-\`\`\`
+```
 
 ### 4. Inicie o projeto completo
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 Isso iniciará:
 - **Frontend** em http://localhost:3000
@@ -50,7 +50,7 @@ Isso iniciará:
 
 ## Estrutura do Projeto
 
-\`\`\`
+```
 tempo-de-processo/
 ├──  frontend/                 # React Frontend
 │   ├──  src/
@@ -79,22 +79,22 @@ tempo-de-processo/
 ├──  docker-compose.yml       # Orquestração Docker
 ├──  Dockerfile              # Build unificado
 └──  README.md               # Este arquivo
-\`\`\`
+```
 
 ## Scripts Disponíveis
 
 ### Desenvolvimento
-\`\`\`bash
+```bash
 npm run dev              # Inicia frontend + backend
 npm run client:dev       # Apenas frontend (porta 3000)
 npm run server:dev       # Apenas backend (porta 3001)
-\`\`\`
+```
 
 ### Produção
-\`\`\`bash
+```bash
 npm run build           # Build completo
 npm start               # Inicia em modo produção
-\`\`\`
+```
 
 ##  API Endpoints
 
@@ -111,7 +111,7 @@ Base URL: \`http://localhost:3001/api\`
 
 ### Exemplo de Uso da API
 
-\`\`\`javascript
+```javascript
 // Estimar tempo de processo
 const response = await fetch('/api/estimar', {
   method: 'POST',
@@ -126,7 +126,7 @@ const response = await fetch('/api/estimar', {
 
 const data = await response.json()
 console.log(data.estimativa.tempo.texto) // "6 a 12 meses"
-\`\`\`
+```
 
 ##  Base de Dados
 
@@ -184,7 +184,7 @@ Cada estimativa inclui:
 
 ### Variáveis de Ambiente
 
-\`\`\`env
+```env
 # Servidor
 PORT=3001
 NODE_ENV=development
@@ -197,13 +197,13 @@ RATE_LIMIT_MAX_REQUESTS=200
 
 # Segurança
 SESSION_SECRET=seu_secret_seguro
-\`\`\`
+```
 
 ### Proxy do Frontend
 
 O Vite está configurado para fazer proxy das chamadas \`/api\`:
 
-\`\`\`javascript
+`javascript
 // frontend/vite.config.js
 export default defineConfig({
   server: {
@@ -212,27 +212,27 @@ export default defineConfig({
     }
   }
 })
-\`\`\`
+`
 
 ## Deploy com Docker
 
 ### Build e execução
-\`\`\`bash
+```bash
 # Build da imagem
 docker build -t tempo-processo .
 
 # Executar container
 docker run -p 3001:3001 tempo-processo
-\`\`\`
+```
 
 ### Docker Compose
-\`\`\`bash
+```bash
 # Iniciar serviços
 docker-compose up -d
 
 # Ver logs
 docker-compose logs -f
-\`\`\`
+```
 
 ## Funcionalidades Avançadas
 
@@ -259,7 +259,7 @@ docker-compose logs -f
 
 ## Testes
 
-\`\`\`bash
+```bash
 # Executar todos os testes
 npm test
 
@@ -268,7 +268,7 @@ cd backend && npm test
 
 # Testes do frontend
 cd frontend && npm test
-\`\`\`
+```
 
 ## Suporte e Contribuição
 
