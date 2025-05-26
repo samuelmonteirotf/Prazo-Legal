@@ -1,6 +1,6 @@
 # ⚖️ Tempo de Processo - Estimador Judicial
 
-**Aplicação completa** para estimativa de tempo de tramitação de processos judiciais com base no tipo de ação e tribunal escolhido.
+**Aplicação** para estimativa de tempo de tramitação de processos judiciais com base no tipo de ação e tribunal escolhido.
 
 ## 📌 Visão Geral
 
