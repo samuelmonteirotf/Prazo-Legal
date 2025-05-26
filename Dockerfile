@@ -33,11 +33,11 @@ RUN chown -R nodejs:nodejs /app
 USER nodejs
 
 # Expor porta
-EXPOSE 3001
+EXPOSE 8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-  CMD node -e "const http=require('http');const options={hostname:'localhost',port:3001,path:'/api/health',timeout:2000};const req=http.request(options,(res)=>{process.exit(res.statusCode===200?0:1)});req.on('error',()=>process.exit(1));req.end();"
+  CMD node -e "const http=require('http');const options={hostname:'localhost',port:8080,path:'/api/health',timeout:2000};const req=http.request(options,(res)=>{process.exit(res.statusCode===200?0:1)});req.on('error',()=>process.exit(1));req.end();"
 
 # Comando para iniciar aplicação
 CMD ["npm", "start"]
