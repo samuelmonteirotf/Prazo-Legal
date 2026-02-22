@@ -204,8 +204,13 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Erro interno do servidor", code: "INTERNAL_ERROR" })
 })
 
-// Inicia o servidor
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando na porta ${PORT}`)
-  console.log(`📊 ${estimativasData.length} estimativas | ${tribunaisData.length} tribunais | ${tiposAcaoData.length} tipos de ação`)
-})
+// Inicia o servidor apenas se não for Vercel
+if (process.env.NODE_ENV !== "production" || process.env.RUN_LOCAL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Servidor rodando na porta ${PORT}`)
+    console.log(`📊 ${estimativasData.length} estimativas | ${tribunaisData.length} tribunais | ${tiposAcaoData.length} tipos de ação`)
+  })
+}
+
+module.exports = app
+
