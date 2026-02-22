@@ -1,21 +1,43 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
+import { jsPDF } from "jspdf"
+import html2canvas from "html2canvas"
 import Header from "./components/Header"
 import EstimatorForm from "./components/EstimatorForm"
 import ResultCard from "./components/ResultCard"
 import ComparisonChart from "./components/ComparisonChart"
 import StatsCard from "./components/StatsCard"
 import { ProcessService } from "./services/ProcessService"
-import { Scale, Clock, TrendingUp, AlertCircle } from "lucide-react"
+import { Scale, Clock, TrendingUp, AlertCircle, Download } from "lucide-react"
 
 function App() {
   const [estimativa, setEstimativa] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
   const [stats, setStats] = useState(null)
+  const resultRef = useRef(null)
 
   const processService = new ProcessService()
+
+  const handleExportPDF = async () => {
+    if (!resultRef.current) return
+    try {
+      const canvas = await html2canvas(resultRef.current, { scale: 2, useCORS: true })
+      const imgData = canvas.toDataURL("image/png")
+      const pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "mm",
+        format: "a4",
+      })
+      const pdfWidth = pdf.internal.pageSize.getWidth()
+      const pdfHeight = (canvas.height * pdfWidth) / canvas.width
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight)
+      pdf.save("estimativa-prazo-legal.pdf")
+    } catch (error) {
+      console.error("Erro ao gerar PDF:", error)
+    }
+  }
 
   useEffect(() => {
     loadStats()
@@ -117,7 +139,16 @@ function App() {
             )}
 
             {estimativa && !loading && (
-              <div className="space-y-6 animate-fade-in">
+              <div className="space-y-6 animate-fade-in" ref={resultRef}>
+                <div className="flex justify-end mb-2">
+                  <button
+                    onClick={handleExportPDF}
+                    className="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 shadow-sm"
+                  >
+                    <Download className="w-5 h-5" />
+                    <span>Exportar estimativa como PDF</span>
+                  </button>
+                </div>
                 <ResultCard estimativa={estimativa} />
 
                 {estimativa.comparativo && estimativa.comparativo.length > 0 && (
@@ -200,10 +231,10 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8 mt-16">
+      <footer className="bg-gray-900 border-t border-gray-800 text-white py-8 mt-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-300">
-            © 2024 Estimador de Tempo de Processo. Desenvolvido para a comunidade jurídica brasileira.
+          <p className="text-gray-300 font-medium">
+            Desenvolvido por Samuel Monteiro Junior - LegalTech
           </p>
           <p className="text-gray-400 text-sm mt-2">
             ⚠️ As estimativas são orientativas e baseadas em dados históricos. Consulte sempre um advogado para análise

@@ -27,6 +27,10 @@ const ComparisonChart = ({ data }) => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 1500,
+      easing: 'easeOutQuart',
+    },
     plugins: {
       legend: {
         position: "top",
